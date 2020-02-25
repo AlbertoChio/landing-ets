@@ -1,0 +1,151 @@
+@media screen and (min-width: 601px) {
+.banner {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  min-height: 1200px;
+}
+.logo {
+  width: 15%;
+  max-width: 600px;
+  height:auto;
+  margin: 15px;
+  padding-bottom: 70px;
+}
+
+.banner-overlay{
+  padding: 30px;
+  padding-bottom: 10px;
+  margin: auto;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1500px;
+  widows: auto;
+  background-color: #202835;
+  opacity: .8;
+  position:relative;
+  top:120px;
+ }
+
+ .T1{
+  color: #ffffff;
+  font-size: 58px;
+  text-align: center;
+}
+
+
+.P1{
+ color: #ffffff;
+ font-size: 46px;
+ text-align: center;
+ margin: 0px;
+ padding: 0px;
+ line-height:100%
+}
+
+.div-margen1{
+    text-align: center;
+    position:relative;
+    top: -55px;
+}
+
+.div-banner-path{
+  position: relative;
+
+}
+
+.margen-1{
+  max-height: 2px;
+  max-width: 621px;
+}
+
+.div-banner-descripcion{
+  position: relative;
+  top:-50px;
+}
+
+.banner-path{
+  display: grid;
+  margin: 0 auto;
+  max-width: 100%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+
+.banner {
+     min-height: 650px;
+     width:100%;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+
+.logo {
+  width: 30%;
+  height:auto;
+  margin: 15px;
+  padding-bottom: 45px;
+  }
+
+.banner-overlay{
+  padding: 15px;
+  padding-bottom: 10px;
+  margin: auto;
+  max-width: 300px;
+  background-color: #202835;
+  opacity: .7;
+  display: block;
+}
+
+.div-banner-descripcion{
+  position: relative;
+  top:10px;
+}
+.T1{
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+}
+
+.P1{
+ color: #ffffff;
+ font-size: 20px;
+ text-align: justify;
+ margin: 0px;
+ padding: 0px;
+ line-height:100%
+}
+
+.div-margen1{
+   display: grid;
+    text-align: center;
+    position:relative;
+    top: -30px;
+}
+
+.div-banner-path{
+  position: relative;
+}
+
+.margen-1{
+display: block;
+margin: 10px auto;
+max-width: 100%;
+}
+
+.div-banner-descripcion{
+  position: relative;
+  display: block;
+  top: -20px;
+}
+
+.banner-path{
+  display: grid;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+ }
