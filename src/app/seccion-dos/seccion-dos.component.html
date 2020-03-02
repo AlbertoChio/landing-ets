@@ -70,4 +70,49 @@
   </div>
 </div>
 
+</div >
+
+<div class="div-objetivo">
+  <div>
+    <div>
+    <h3 class="T2">{{beneficios}}</h3>
+    </div>
+    <div class="div-margen1">
+      <img class="margen-1"src="{{margen2}}"alt="margen" >
+    </div>
+  </div>
+</div>
+
+<div class="b-wrapper">
+
+  <div class="frame">
+
+  <div class="box" *ngFor="let beneficio of beneficiosobj" (mouseenter)="banderarombof(beneficio.beneficio)">
+    <img class="ico"src="{{beneficio.ico.blanco}}" align="top"  *ngIf="selectedb==beneficio.beneficio else other_content">
+    <ng-template #other_content>
+    <img #other_content class="ico"src="{{beneficio.ico.rojo}}" align="top">
+      </ng-template>
+
+    <div class="T4 colorbeneficio">
+      {{beneficio.titulo}}
+    </div>
+  </div>
+
+  </div>
+
+  <div class="b-container" >
+    <ul class="alinearbene"*ngFor="let beneficio of filterItemsOfType(selectedb)">
+      <li class="P2" *ngFor="let descripcion of beneficio.descripciones" style="padding-left:1em">
+        {{descripcion.descripcion}}
+
+      </li>
+
+    </ul>
+
+  </div>
+
+
+
+
+
 </div>
