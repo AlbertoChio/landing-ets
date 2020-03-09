@@ -1,93 +1,51 @@
 @media screen and (min-width: 601px) {
 
 .div-objetivo{
-
   padding: 30px;
-
-  padding-bottom: 60px;
-
   margin: auto;
-
   max-height: 1000px;
-
   min-width: 700px;
-
   max-width: 1300px;
 
-  widows: auto;
-
-    background: rgba(25, 25, 25, .03);
-
-  opacity: ..9;
-
-  top:120px;
-
+  align-content: center;
 }
-
-
 
 .frame{
-
-   width:700px;
-
-   height: 500px;
-
    display:flex;
-
-   background: rgba(25, 25, 25, .03);
-
-   padding:50px;
-
-   flex-direction: column;
-
+   width: 700px;
    flex-wrap: wrap;
-
-
-
-
-
+   min-height: 400px;
+   padding-bottom: 35px;
 }
 
-
-
 .b-wrapper{
-
   display: flex;
-
   flex-wrap: nowrap;
-
-  width: 1300px;
-
-
+  max-width: 1300px;
 
   align-content: center;
-
-  padding: auto;
-
   margin: auto;
-
+    background: rgba(25, 25, 25, .03);
 }
 
 .box {
-
    position: relative;
    flex-wrap: wrap;
-   left: 80px;
    transform: rotate(45deg);
    height: 120px;
    width: 120px;
    cursor: pointer;
-   background: rgb(255, 255, 255);
    border: 1px solid #303840;
-   transition: all 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
-   z-index: 1;
+   
+
+  margin-top: 60px;
+   margin-left: 60px;
 
   }
 
   .ico{
     transform: rotate(-45deg);
     position: relative;
-    left: -5px;
 
   }
 
@@ -97,91 +55,24 @@
     left: 5px;
   }
 
-  .box:nth-child(2) {
-    position: relative;
-    left: 180px;
-    top: -20px;
-    z-index: 2;
-
-  }
-
-  .box:nth-child(3) {
-    position: relative;
-    left: 280px;
-    top: -40px;
-    z-index: 2;
-
-  }
-
-  .box:nth-child(4) {
-    position: relative;
-    left: -20px;
-    top: 0px;
-    z-index: 2;
-
-  }
-
-  .box:nth-child(5) {
-    position: relative;
-    left: 80px;
-    top: -20px;
-    z-index: 1;
-  }
-
-  .box:nth-child(6) {
-    position: relative;
-    left: 180px;
-    top: -40px;
-    z-index: 2;
-  }
-
-
-
-
 
 .div-caracteristicas-g{
-
-
-
     display:flex;
-
-
-
     flex-wrap: wrap;
-
-
-
     max-width:1300px;
-
-
-
     margin: auto;
-
     padding: auto;
-
-
-
     padding-bottom: 100px;
 
-    background: rgba(25, 25, 25, .03);
-
 }
-
-
 
 .b-container{
 
-
-  padding-right: 50px;
-  margin: auto;
-
-  width: 600px;
-
-  height: 500px;
-
-  background: rgba(25, 25, 25, .03);
-
+  height: auto;
+  max-width: 600px;
+  padding-top: 60px;
 }
+
 ul {
   list-style: none; /* Remove default bullets */
 }
@@ -193,7 +84,6 @@ ul li::before {
   font-weight: bold; /* If you want it to be bold */
   display: inline; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-
 }
 
 ul li {
@@ -205,151 +95,116 @@ ul li {
   left: -70px;
 }
 
-.rotate90 {
-
-    -webkit-transform: rotate(90deg);
-
-    -moz-transform: rotate(90deg);
-
-    -o-transform: rotate(90deg);
-
-    -ms-transform: rotate(90deg);
-
-    transform: rotate(90deg);
-
-}
-
-
-
 .div-caracteristica{
-
-
-
     display: flex;
-
     margin: auto;
-
     padding: auto;
-
-
-
-
-
 }
-
-
 
 .div-caracteristicas-ico{
-
     padding: 20px;
-
 }
 
-
-
 .caracteristica-desc-wrap{
+  max-width: 400px;
+}
 
-
-
+.objetivo-desc-wrap{
   max-width: 430px;
 
 }
 
-
-
 .T2{
-
   color:#002338;
-
   font-size: 50px;
-
   text-align: center;
-
 }
 
 .T4{
-
   position: relative;
-
   color:#002338;
-
   font-size: 10px;
-
   transform: rotate(-45deg);
-
   left: 14px;
-
   bottom: 20px;
-
   text-align: center;
+
 }
 
 
 .T3{
-
 color:#f03838;
-
 font-size: 28px;
-
 text-align: left;
-
 }
 
+.P1{
+color:#ffffff;
+font-size: 20px;
+text-align: justify;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
 
 
 .P2{
-
 color:#000000;
-
-font-size: 20px;
-
+font-size: 24px;
 text-align: justify;
-
 margin: 0px;
-
 padding: 0px;
-
-line-height:100%
-
+line-height:100%;
 }
-
-
 
 .div-margen1{
-
+  height: 2px;
+  max-height: 2px;
     text-align: center;
-
     position:relative;
-
     top: -55px;
-
 }
-
-
 
 .margen-1{
-
+  height: 2px;
   max-height: 2px;
-
   max-width: 621px;
-
 }
-
-
 
 .div-banner-descripcion{
+  margin: auto;
+  max-width: 800px;
+}
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 283px;
+  margin: auto;
 
-  position: relative;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  display: grid;
-
-  top:-50px;
+.parrallax-overlay{
+  background: rgba(0, 0, 0,.6);
+  margin: 0px;
+  height: 283px;
 
 }
 
+.parallax-navigator{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items:baseline;
 }
-
-
+}
 
 @media screen and (max-width: 600px) {
   .div-objetivo{

@@ -23,24 +23,14 @@ export class SeccionDosComponent implements OnInit {
   medidadescripciontxt="En Edith Capacita practicaras técnicas de aprendizaje acelerado a través de ejercicios individuales y grupales, asi cmomo dinámicas de role playing."
   instructordescripciontxt="Instructor experto en liderazgo, capacitado a niveles directivos, gerenciales, así como jefes de área y supervisores en las organizaciones. Hasta el momento más de 2,500 horas impartidas en el tema."
 
-  comunicacionblanco:string="assets/seccion-dos/comunicacionblanco.png"
-  conocerasblanco:string="assets/seccion-dos/conocerasblanco.png"
-  desarrolloblanco:string="assets/seccion-dos/desarrolloblanco.png"
-  efectivoblanco:string="assets/seccion-dos/efectivoblanco.png"
-  modelosblanco:string="assets/seccion-dos/modelosblanco.png"
-  valoresblanco:string="assets/seccion-dos/valoresblanco.png"
-  estiloblanco:string="assets/seccion-dos/estiloblanco.jpg"
   beneficios:string="BENEFICIOS DEL CURSO"
 
-  comunicacionrojo:string="assets/seccion-dos/comunicacionrojo.png"
-  conocerasrojo:string="assets/seccion-dos/conocerasrojo.png"
-  desarrollorojo:string="assets/seccion-dos/desarrollorojo.png"
-  efectivorojo:string="assets/seccion-dos/efectivorojo.png"
-  modelosrojo:string="assets/seccion-dos/modelosrojo.png"
-  valoresrojo:string="assets/seccion-dos/valoresrojo.png"
-  estilorojo:string="assets/seccion-dos/estilorojo.png"
+  izq:string="assets/seccion-dos/flechaderecha.png"
+  der:string="assets/seccion-dos/flechaizquierda.png"
+  ico:string="assets/seccion-dos/incluye1.png"
 
   selectedb:string="comunicacion"
+  colorcheck=false
   public beneficiosobj:any[] =[
     {
       "beneficio": "comunicacion",
@@ -148,6 +138,19 @@ export class SeccionDosComponent implements OnInit {
     }
 
   ]
+
+  public slides =
+    [
+        {
+          src: "assets/images/svg/carousel/Onboarding1.svg"
+        },
+        {
+          src: "assets/images/svg/carousel/Onboarding2.svg"
+        },
+        {
+          src: "assets/images/svg/carousel/Onboarding3.svg"
+        }
+    ];
 
   ngOnInit(): void {
   }

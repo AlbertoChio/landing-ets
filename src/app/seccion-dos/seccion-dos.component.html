@@ -72,7 +72,7 @@
 
 </div >
 
-<div class="div-objetivo">
+<div class="div-objetivo" [ngStyle]="{'background-color': 'rgba(25, 25, 25, .03)'}">
   <div>
     <div>
     <h3 class="T2">{{beneficios}}</h3>
@@ -87,16 +87,18 @@
 
   <div class="frame">
 
-  <div class="box" *ngFor="let beneficio of beneficiosobj" (mouseenter)="banderarombof(beneficio.beneficio)">
+  <div class="box" [ngStyle]="{'background-color': selectedb==beneficio.beneficio? 'rgb(240, 56, 56)':'rgb(255, 255, 255)'}" *ngFor="let beneficio of beneficiosobj" (mouseenter)="banderarombof(beneficio.beneficio)" >
     <img class="ico"src="{{beneficio.ico.blanco}}" align="top"  *ngIf="selectedb==beneficio.beneficio else other_content">
     <ng-template #other_content>
     <img #other_content class="ico"src="{{beneficio.ico.rojo}}" align="top">
       </ng-template>
 
-    <div class="T4 colorbeneficio">
+
+    <div class="T4" [ngStyle]="{'color': selectedb==beneficio.beneficio? 'rgb(255, 255, 255)': 'black'}">
       {{beneficio.titulo}}
     </div>
   </div>
+
 
   </div>
 
@@ -111,8 +113,27 @@
 
   </div>
 
+</div>
 
+<div class="parallax" [ngStyle]="{'background-image': 'url(' + 'assets/seccion-dos/sala.jpg' + ')'}">
+  <div class="parrallax-overlay">
+    <div class="T2" [ngStyle]="{'color': 'rgb(255, 255, 255)'}">
+      ESTE CURSO INCLUYE
+    </div>
+    <div class="parallax-navigator">
+      <div [ngStyle]="{'height': 'auto'}">
+      <img src="{{der}}" alt="izq">
+      </div>
+      <div [ngStyle]="{'height': 'auto'}">
+      <img src="{{ico}}" alt="ico">
+      </div>
+      <div class="P1">
+        coffe breack
+      </div>
+      <div [ngStyle]="{'height': 'auto'}">
+      <img src="{{izq}}" alt="der">
+      </div>
+    </div>
 
-
-
+  </div>
 </div>
