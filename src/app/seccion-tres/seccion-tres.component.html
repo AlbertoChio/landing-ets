@@ -10,45 +10,43 @@
 </div>
 
 <div class="i-container">
-  <div class="div-inversion-g">
+  <div class="div-inversion-g" *ngFor="let precio of precios">
     <div class="div-inversion-encabezado">
-      <div class="T5">{{titulosemana}}</div>
+      <div class="T5">{{precio.titulo}}</div>
       <div class="div-margen4">
         <img class="margen-4"src="{{margen4}}" alt="margen">
       </div>
       <div class="P3">
-        {{preciosemana}}
+      {{precio.precio}}
       </div>
       <div class="P4">
-        {{ahorro}}
+      {{precio.ahorras}}
       </div>
     </div>
     <div class="div-margen5">
       <img class="margen-5"src="{{margen5}}"alt="margen" >
     </div>
     <div class="div-inversion-cuerpo">
-
+    <div class="P2">
+      {{precio.horas}}
+    </div>
+    <div class="P2">
+      {{precio.preciolista}}
+    </div>
+    <div class="P2">
+      {{precio.fechas}}
+    </div>
+    <div class="P2">
+      {{precio.horario}}
+    </div>
+    <div class="P2">
+      {{precio.sesiones}}
+    </div>
+    <div class="P2">
+      {{precio.lugar}}
     </div>
     </div>
+    </div>
 
-    <div class="div-inversion-g">
-      <div class="div-inversion-encabezado">
-        <div class="T5">{{titulosemana}}</div>
-        <div class="div-margen4">
-          <img class="margen-4"src="{{margen4}}" alt="margen">
-        </div>
-        <div class="P3">
-          {{preciosemana}}
-        </div>
-        <div class="P4">
-          {{ahorro}}
-        </div>
-      </div>
-      <div class="div-margen5">
-        <img class="margen-5"src="{{margen5}}"alt="margen" >
-      </div>
-      <div class="div-inversion-cuerpo">
 
-      </div>
-      </div>
   </div>

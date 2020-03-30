@@ -13,7 +13,33 @@ export class SeccionTresComponent implements OnInit {
   margen5:string="assets/seccion-tres/margen5.png"
   titulosemana:string="Presencial-ENTRE SEMANA"
   preciosemana:string="$1,999"
-  ahorro:string="Ahorras $2,400"
+  pregular:string="Ahorras $2,400"
+  public precios:any[] =[
+    {
+      "id": "1",
+      "titulo":"Presencial-ENTRE SEMANA",
+      "precio":"$2,850",
+      "ahorras":"Ahorras $4,800",
+      "horas": "15 horas",
+      "preciolista": "Precio de lista: $4,400",
+      "fechas":"Del al de ",
+      "horario":"Horario: 16:00 p.m. a 19:00 p.m.",
+      "sesiones": "Sesiones de 3 horas",
+      "lugar":"CDMX"
+    },
+    {
+      "id": "2",
+      "titulo":"Presencial-ENTRE SEMANA",
+      "precio":"$2,850",
+      "ahorras":"Ahorras $4,800",
+      "horas": "15 horas",
+      "preciolista": "Precio de lista: $4,400",
+      "fechas":"Del al de ",
+      "horario":"Horario: 16:00 p.m. a 19:00 p.m.",
+      "sesiones": "Sesiones de 3 horas",
+      "lugar":"CDMX"
+    }
+  ]
   constructor() { }
 
   ngOnInit(): void {

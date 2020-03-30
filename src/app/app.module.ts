@@ -9,6 +9,7 @@ import { BannerComponent } from './banner/banner.component';
 import { SeccionDosComponent } from './seccion-dos/seccion-dos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeccionTresComponent } from './seccion-tres/seccion-tres.component';
+import { SeccionCuatroComponent } from './seccion-cuatro/seccion-cuatro.component';
 
 const routes: Routes = [
   //{ path: '', redirectTo: '/lideazgo-coaching', pathMatch: 'full' },
@@ -24,7 +25,8 @@ const routes: Routes = [
     AppComponent,
     BannerComponent,
     SeccionDosComponent,
-    SeccionTresComponent
+    SeccionTresComponent,
+    SeccionCuatroComponent
   ],
   imports: [
     BrowserModule,
