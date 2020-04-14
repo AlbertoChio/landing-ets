@@ -152,18 +152,22 @@ export class SeccionDosComponent implements OnInit {
         }
     ];
 
+
+      filterItemsOfType(beneficio){
+        let descripciones:any[]=[];
+        let beneficiof=this.beneficiosobj.filter(x => x.beneficio == beneficio);
+
+        return beneficiof;
+
+      }
+
+      banderarombof(beneficio:string){
+        this.selectedb=beneficio;
+      }
+
   ngOnInit(): void {
   }
-  banderarombof(beneficio:string){
-    this.selectedb=beneficio;
-  }
 
 
-  filterItemsOfType(beneficio){
-    let descripciones:any[]=[];
-    let beneficiof=this.beneficiosobj.filter(x => x.beneficio == beneficio);
 
-    return beneficiof;
-
-  }
 }

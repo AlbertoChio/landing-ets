@@ -1,0 +1,113 @@
+@media screen and (min-width: 601px) {
+  .div-objetivo{
+    padding: 30px;
+    padding-bottom: 50px;
+    margin: auto;
+    max-height: 1000px;
+    min-width: 700px;
+    max-width: 1300px;
+    align-content: center;
+  }
+  .T2{
+    color:#002338;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .margen-4{
+    height: 2px;
+    max-height: 2px;
+    max-width: 300px;
+  }
+
+  .margen-5{
+    display: grid;
+    margin: 0 auto;
+    width: 380px;
+
+  }
+
+
+
+    .div-margen4{
+      height: 2px;
+      max-height: 2px;
+        text-align: center;
+        position:relative;
+  padding-bottom: 40px;
+    }
+
+    .div-margen5{
+      position: relative;
+    }
+  .div-banner-descripcion{
+    margin: auto;
+    max-width: 800px;
+  }
+
+  .T5{
+
+    color:#d88500;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .P3{
+  color:#ffffff;
+  font-size: 35px;
+text-align: center;
+  line-height:100%;
+  margin: auto;
+  padding: auto;
+  padding-bottom: 10px;
+  }
+
+  .P4{
+  color:#ffffff;
+  font-size: 12px;
+  text-align: center;
+  line-height:100%;
+  margin: auto;
+  padding: auto;
+  }
+
+  .P2{
+  color:#000000;
+  font-size: 20px;
+  text-align: left;
+  line-height:100%;
+  padding: 20px;
+
+  }
+
+.i-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  margin: auto;
+  justify-content: center;
+}
+
+.div-inversion-g{
+  width: 380px;
+  height: 600px;
+  margin: 10px;
+}
+
+.div-inversion-encabezado{
+  background: rgb(32, 40, 53);
+  height:150px;
+  padding: 10px;
+}
+.div-inversion-cuerpo{
+  background: rgb(243, 243, 243);
+  height:auto;
+  padding: 10px;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+}

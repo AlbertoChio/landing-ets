@@ -1,0 +1,339 @@
+@media screen and (min-width: 601px) {
+
+.div-objetivo{
+  padding: 30px;
+  margin: auto;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  padding-bottom: 60px;
+  align-content: center;
+}
+
+.div-beneficios{
+  width: 100%;
+}
+
+.div-descripcion-seccion-dos{
+    padding-right:  50px;
+    padding-left:   50px;
+    margin: auto;
+    max-height: 1000px;
+    min-width: 700px;
+    max-width: 1300px;
+
+    align-content: center;
+    position:relative;
+    top: -25px;
+  }
+
+.div-caracteristica-wrap{
+display: flex;
+padding-bottom: 20px;
+}
+
+.frame{
+  display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	align-content: center;
+  }
+
+.b-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+.box {
+   position: relative;
+   flex-wrap: wrap;
+   transform: rotate(45deg);
+   height: 120px;
+   width: 120px;
+   cursor: pointer;
+   border: 1px solid #303840;
+
+padding: 0px;
+  margin-top: 60px;
+   margin-left: 60px;
+
+  }
+
+  .ico{
+    transform: rotate(-45deg);
+    position: relative;
+
+  }
+
+  .icoo{
+    transform: rotate(-45deg);
+    position: relative;
+    left: 5px;
+  }
+
+
+.div-caracteristicas-g{
+    display:flex;
+    flex-wrap: wrap;
+    max-width:1300px;
+    margin: auto;
+    padding: auto;
+    padding-bottom: 100px;
+
+}
+
+.b-container{
+ position: relative;
+ top:50px;
+ margin: 0 auto;
+ padding-bottom: 60px;
+ max-width: 60%;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  font-size: 170%;
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+}
+
+ul li {
+  padding-bottom: 20px;
+}
+
+.alinearbene{
+margin: auto;
+}
+
+.div-caracteristica{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.div-caracteristicas-ico{
+    padding: 20px;
+}
+
+.caracteristica-desc-wrap{
+  max-width: 400px;
+
+}
+
+.objetivo-desc-wrap{
+  max-width: 430px;
+
+}
+
+.T2{
+  color:#002338;
+  font-size: 50px;
+  text-align: center;
+}
+
+.T4{
+  position: relative;
+  color:#002338;
+  font-size: 10px;
+  transform: rotate(-45deg);
+  left: 14px;
+  bottom: 20px;
+  text-align: center;
+
+}
+
+
+.T3{
+color:#f03838;
+font-size: 28px;
+text-align: left;
+padding-bottom: 20px;
+}
+
+.P1{
+color:#ffffff;
+font-size: 20px;
+text-align: justify;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+
+.P2{
+color:#000000;
+font-size: 24px;
+text-align: justify;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+.div-margen1-seccion-dos{
+  height: 2px;
+  max-height: 2px;
+    text-align: center;
+    position:relative;
+    top: -55px;
+}
+
+.margen-1{
+  height: 2px;
+  max-height: 2px;
+  max-width: 621px;
+}
+
+.div-banner-descripcion{
+  margin: auto;
+  max-width: 800px;
+}
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 283px;
+  margin: auto;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parrallax-overlay{
+  background: rgba(0, 0, 0,.6);
+  margin: 0px;
+  height: 283px;
+  padding: 30px;
+}
+
+.parallax-navigator{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items:baseline;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .div-objetivo{
+    padding: 15px;
+    margin: auto;
+    max-width: 300px;
+    background: rgba(25, 25, 25, .03);
+   }
+
+   .T2{
+    color:#002338;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .P2{
+   color:#000000;
+   font-size: 16px;
+   text-align: justify;
+   margin: 0px;
+   padding: 0px;
+   line-height:100%
+  }
+
+  .div-caracteristica-wrap{
+  display: flex;
+  padding-bottom: 20px;
+  }
+
+  .margen-1{
+  max-width: 100%;
+
+  }
+  .div-banner-descripcion{
+    position: relative;
+    display: block;
+    top: -20px;
+  }
+
+  .div-caracteristicas{
+    padding: 15px;
+    padding-bottom: 10px;
+    margin: auto;
+    max-width: 300px;
+    display: block;
+  }
+
+  .caracteristicas{
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  }
+
+  .div-caracteristicas-g{
+
+     display:flex;
+
+     flex-wrap: wrap;
+
+     max-width:600px;
+
+     margin: 50px;
+
+     background: rgba(25, 25, 25, .03);
+
+  }
+
+  .beneficios-container{
+
+     display:flex;
+
+     flex-wrap: wrap;
+
+     max-width:600px;
+
+     margin: 50px;
+
+     background: rgba(25, 25, 25, .03);
+
+  }
+
+  .div-caracteristica{
+
+     display: flex;
+
+     padding: auto;
+
+     flex-wrap: wrap;
+
+
+
+  }
+
+ .div-caracteristicas-ico{
+     padding: 20px;
+     margin: auto;
+ }
+
+ .caracteristica-desc-wrap{
+
+   max-width: 430px;
+ }
+
+ .T3{
+  color:#f03838;
+  font-size: 28px;
+  text-align: left;
+ }
+}

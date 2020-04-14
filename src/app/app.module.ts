@@ -10,11 +10,13 @@ import { SeccionDosComponent } from './seccion-dos/seccion-dos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeccionTresComponent } from './seccion-tres/seccion-tres.component';
 import { SeccionCuatroComponent } from './seccion-cuatro/seccion-cuatro.component';
+import { LiderazgoComponent } from './liderazgo/liderazgo.component';
+import { VentasComponent } from './ventas/ventas.component';
 
 const routes: Routes = [
-  //{ path: '', redirectTo: '/lideazgo-coaching', pathMatch: 'full' },
-  //{ path: 'directivas', component: DirectivaComponent },
-  //{ path: 'clientes', component: ClientesComponent },
+  { path: '', redirectTo: '/lideazgo-coaching', pathMatch: 'full' },
+  { path: 'lideazgo-coaching', component: LiderazgoComponent },
+  { path: 'ventas', component: VentasComponent }
   //{ path: 'clientes/page/:page', component: ClientesComponent },
   //{ path: 'clientes/form', component: FormComponent },
   //{ path: 'clientes/form/:id', component: FormComponent }
@@ -26,7 +28,9 @@ const routes: Routes = [
     BannerComponent,
     SeccionDosComponent,
     SeccionTresComponent,
-    SeccionCuatroComponent
+    SeccionCuatroComponent,
+    LiderazgoComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,

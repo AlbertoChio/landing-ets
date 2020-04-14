@@ -1,0 +1,239 @@
+<div [ngStyle]="{'background-image': 'url(' + 'assets/liderazgo/banner/banner.jpg' + ')'}" class="banner">
+  <div>
+    <img class="logo"src="{{logo}}" >
+  </div>
+  <div class="banner-overlay">
+    <div>
+      <div class="div-curso">
+      <h3 class="T1">{{curso}}</h3>
+      </div>
+      <div class="div-margen1">
+        <img class="margen-1"src="{{margen1}}"alt="margen" >
+      </div>
+      <div class="div-banner-descripcion">
+      <p class="P1">{{descripcion}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="div-banner-path">
+  <img class="banner-path"src="{{pathbanner}}" alt="pathbanner">
+</div>
+<div class="div-objetivo">
+  <div>
+    <div>
+    <h3 class="T2">{{objetivo}}</h3>
+    </div>
+    <div class="div-margen1">
+      <img class="margen-1"src="{{margen2}}"alt="margen" >
+    </div>
+    <div class="div-banner-descripcion">
+    <p class="P2">{{descripcionsecciondos}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="div-caracteristicas-g">
+
+<div  *ngFor="let caracteristica of caracteristicasobj" class="div-caracteristica">
+  <div class="div-caracteristica-wrap">
+  <div class="div-caracteristicas-ico">
+    <img src="{{caracteristica.ico}}">
+  </div>
+  <div class="div-caracteristicas-txt">
+      <div class="T3">
+        {{caracteristica.titulo}}
+      </div>
+      <div class="P2 caracteristica-desc-wrap">
+        {{caracteristica.caracteristica}}
+      </div>
+  </div>
+</div>
+  </div>
+
+</div >
+
+<div class="div-beneficios" [ngStyle]="{'background-color': 'rgba(25, 25, 25, .03)'}">
+  <div>
+    <div>
+    <h3 class="T2">{{beneficios}}</h3>
+    </div>
+    <div class="div-margen1">
+      <img class="margen-1"src="{{margen2}}"alt="margen" >
+    </div>
+  </div>
+
+
+
+  <div class="frame">
+
+
+
+
+  <div class="box" [ngStyle]="{'background-color': selectedb==beneficio.beneficio? 'rgb(240, 56, 56)':'rgb(255, 255, 255)'}" *ngFor="let beneficio of beneficiosobj" (mouseenter)="banderarombof(beneficio.beneficio)" >
+    <img class="ico"src="{{beneficio.ico.blanco}}" align="top"  *ngIf="selectedb==beneficio.beneficio else other_content">
+    <ng-template #other_content>
+    <img #other_content class="ico"src="{{beneficio.ico.rojo}}" align="top">
+      </ng-template>
+
+
+    <div class="T4" [ngStyle]="{'color': selectedb==beneficio.beneficio? 'rgb(255, 255, 255)': 'black'}">
+      {{beneficio.titulo}}
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+  <div class="b-container" >
+    <ul class="alinearbene"*ngFor="let beneficio of filterItemsOfType(selectedb)">
+      <li class="P2" *ngFor="let descripcion of beneficio.descripciones" >
+        {{descripcion.descripcion}}
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+<div class="parallax" [ngStyle]="{'background-image': 'url(' + 'assets/ventas/seccion-dos/sala.jpg' + ')'}">
+  <div class="parrallax-overlay">
+    <div class="T2" [ngStyle]="{'color': 'rgb(255, 255, 255)'}">
+      ESTE CURSO INCLUYE
+    </div>
+    <div class="parallax-navigator">
+      <div [ngStyle]="{'height': 'auto'}">
+      <img src="{{der}}" alt="izq">
+      </div>
+      <div [ngStyle]="{'height': 'auto'}">
+      <img src="{{ico}}" alt="ico">
+      </div>
+      <div class="P1">
+        coffe breack
+      </div>
+      <div [ngStyle]="{'height': 'auto'}">
+      <img src="{{izq}}" alt="der">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="div-objetivo">
+  <div>
+    <div>
+    <h3 class="T2">{{inversion}}</h3>
+    </div>
+    <div class="div-margen1">
+      <img class="margen-1"src="{{margen2}}"alt="margen" >
+    </div>
+  </div>
+</div>
+
+<div class="i-container">
+  <div class="div-inversion-g" *ngFor="let precio of precios">
+    <div class="div-inversion-encabezado">
+      <div class="T5">{{precio.titulo}}</div>
+      <div class="div-margen4">
+        <img class="margen-4"src="{{margen4}}" alt="margen">
+      </div>
+      <div class="P3">
+      {{precio.precio}}
+      </div>
+      <div class="P4">
+      {{precio.ahorras}}
+      </div>
+    </div>
+    <div class="div-margen5">
+      <img class="margen-5"src="{{margen5}}"alt="margen" >
+    </div>
+    <div class="div-inversion-cuerpo">
+    <div class="P2">
+      {{precio.horas}}
+    </div>
+    <div class="P2">
+      {{precio.preciolista}}
+    </div>
+    <div class="P2">
+      {{precio.fechas}}
+    </div>
+    <div class="P2">
+      {{precio.horario}}
+    </div>
+    <div class="P2">
+      {{precio.sesiones}}
+    </div>
+    <div class="P2">
+      {{precio.lugar}}
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="background">
+    <div class="div-objetivo">
+      <div>
+        <div>
+        <h3 class="T2seccioncuatro">{{titulo}}</h3>
+        </div>
+        <div class="div-margen1">
+          <img class="margen-1"src="{{margen2}}"alt="margen" >
+        </div>
+        <div class="div-banner-descripcion">
+        <p class="P2seccioncuatro">{{descripcion}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="i-container">
+      <div class="div-tarjetacontacto div-descarga-cuerpo">
+
+        <div class="div-contacto">
+          <div class="T3">
+        VISÍTANOS
+          </div>
+          <div class="P22">
+        Del. Azcapotzalco, Col. Claveria, CDMX.
+          </div>
+        </div>
+
+        <div class="div-contacto">
+          <div class="T3">
+        LLÁMANOS
+          </div>
+          <div class="P22">
+        50192943
+          </div>
+          <div class="P22">
+        55 1948 2497
+          </div>
+        </div>
+
+        <div class="div-contacto">
+          <div class="T3">
+        ENVÍA UN EMAIL
+          </div>
+          <div class="P22">
+        correo
+          </div>
+        </div>
+
+        </div>
+      <div class="div-contactouser div-descarga-cuerpo">
+
+        <form >
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="Nombre">
+                <label for="lname">Correo</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tu correo">
+                <label for="lname">Teléfono</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tu teléfono">
+                <label for="subject">Por qué te interesa este curso?</label>
+                <textarea id="subject" name="subject" placeholder="Escribe algo" style="height:170px"></textarea>
+                <input type="submit" value="Recibir temario">
+              </form>
+            </div>
+        </div>
+        </div>

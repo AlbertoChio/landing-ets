@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -15,7 +16,8 @@ export class BannerComponent implements OnInit {
   pathbanner:string="assets/banner/path_banner.png"
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void  {
 
+
+}
 }
