@@ -24,7 +24,7 @@
 
     align-content: center;
     position:relative;
-    top: -25px;
+
   }
 
 .div-caracteristica-wrap{
@@ -137,6 +137,7 @@ margin: auto;
   color:#002338;
   font-size: 50px;
   text-align: center;
+  line-height: 10%;
 }
 
 .T4{
@@ -172,20 +173,19 @@ line-height:100%;
 color:#000000;
 font-size: 24px;
 text-align: justify;
-margin: 0px;
-padding: 0px;
 line-height:100%;
 }
 
-.div-margen1-seccion-dos{
+.div-margen2-seccion-dos{
   height: 2px;
   max-height: 2px;
     text-align: center;
     position:relative;
-    top: -55px;
+    padding: auto;
+
 }
 
-.margen-1{
+.margen-2{
   height: 2px;
   max-height: 2px;
   max-width: 621px;
@@ -264,7 +264,7 @@ line-height:100%;
   .div-banner-descripcion{
     position: relative;
     display: block;
-    top: -20px;
+
   }
 
   .div-caracteristicas{
