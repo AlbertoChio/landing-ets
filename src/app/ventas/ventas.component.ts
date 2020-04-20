@@ -13,13 +13,14 @@ export class VentasComponent implements OnInit {
   //banner
   banner: string ="assets/ventas/banner/banner.jpg"
   logo:string="assets/ventas/banner/logo.png"
-  curso:string="VENTAS POR TELÉFONO"
+  curso:string="VENTAS TELÉFONICAS"
+  tipocurso:string="CURSO Interactivo OnLine"
   margen1:string="assets/ventas/banner/margen1.png"
   descripcion:string='¿Te interesa incrementar tus ventas y acortar el tiempo que te toma cerrar una venta? Aprende a vender tangibles e intangibles como los mejores vendedores.'
   pathbanner:string="assets/ventas/banner/path_banner.png"
   //seccion dos
   objetivo: string ="OBJETIVO"
-  descripcionsecciondos:string="Al finalizar el curso, el prticipante habrá practicado las técnicas de ventas mas fecetivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relasciones productivas de largo plazo. Practizarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
+  descripcionsecciondos:string="Al finalizar el curso, el prticipante habrá practicado las técnicas de ventas mas efectivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relasciones productivas de largo plazo. Practizarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
   margen2:string="assets/ventas/seccion-dos/margen2.png"
 
   public caracteristicasobj:any[] =[
