@@ -20,23 +20,23 @@ export class VentasComponent implements OnInit {
   pathbanner:string="assets/ventas/banner/path_banner.png"
   //seccion dos
   objetivo: string ="OBJETIVO"
-  descripcionsecciondos:string="Al finalizar el curso, el prticipante habrá practicado las técnicas de ventas mas efectivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relasciones productivas de largo plazo. Practizarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
+  descripcionsecciondos:string="Al finalizar el curso, el participante habrá practicado las técnicas de ventas mas efectivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relasciones productivas de largo plazo. Practizarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
   margen2:string="assets/ventas/seccion-dos/margen2.png"
 
   public caracteristicasobj:any[] =[
     {
       "titulo":"Garantía 100%",
-      "caracteristica": "En Edith Capacita te aseguramos la inversión al 100%. Sí no se cubren las expectativas del participante no paga.",
+      "caracteristica": "En ExcellenT te aseguramos la inversión al 100%. Sí no se cubren las expectativas del participante no paga.",
       "ico":"assets/ventas/seccion-dos/garantia.png"
     },
     {
       "titulo":"Teoría y práctica",
-      "caracteristica": "Edith Capacita te garantiza un curso 80% de practica y 20% de teoría.",
+      "caracteristica": "ExcellenT te garantiza un curso 80% de practico y 20% de teoríco.",
       "ico":"assets/ventas/seccion-dos/practico.png"
     },
     {
       "titulo":"Técnica didáctica",
-      "caracteristica": "En Edith Capacita practicaras técnicas de aprendizaje acelerado a través de ejercicios individuales y grupales, asi cmomo dinámicas de role playing.",
+      "caracteristica": "En ExcellenT practicaras técnicas de aprendizaje acelerado a través de ejercicios individuales y grupales, asi cmomo dinámicas de role playing.",
       "ico":"assets/ventas/seccion-dos/medida.png"
     },
     {
