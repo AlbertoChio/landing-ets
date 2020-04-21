@@ -47,33 +47,24 @@ padding-bottom: 20px;
 }
 
 .box {
-   position: relative;
-   flex-wrap: wrap;
-   transform: rotate(45deg);
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
    height: 120px;
    width: 120px;
    cursor: pointer;
-   border: 1px solid #303840;
-
-padding: 0px;
+   border: .5px solid #303840;
   margin-top: 60px;
    margin-left: 60px;
-
   }
 
-  .ico{
-    transform: rotate(-45deg);
-    position: relative;
-
-  }
-
-  .icoo{
-    transform: rotate(-45deg);
-    position: relative;
-    left: 5px;
-  }
-
-
+.navigator{
+   cursor: pointer;
+}
 .div-caracteristicas-g{
     display:flex;
     flex-wrap: wrap;
@@ -87,9 +78,9 @@ padding: 0px;
 .b-container{
   position: relative;
   top:50px;
-  margin: 0 auto;
+  margin: auto;
   padding-bottom: 60px;
-  max-width: 60%;
+  text-align:
 }
 
 ul {
@@ -109,9 +100,6 @@ ul li {
   padding-bottom: 20px;
 }
 
-.alinearbene{
-margin: auto;
-}
 
 .div-caracteristica{
     display: flex;
@@ -137,18 +125,14 @@ margin: auto;
   color:#002338;
   font-size: 50px;
   text-align: center;
-  line-height: 10%;
+  line-height: 100%;
 }
 
 .T4{
-  position: relative;
   color:#002338;
   font-size: 10px;
-  transform: rotate(-45deg);
-  left: 14px;
-  bottom: 20px;
   text-align: center;
-
+  line-height: 100%;
 }
 
 
@@ -168,7 +152,11 @@ padding: 0px;
 line-height:100%;
 }
 
-
+.alinearbene{
+  max-width:1300px;
+  text-align:center;
+  margin:0 auto;
+}
 .P2{
 color:#000000;
 font-size: 24px;
@@ -184,6 +172,7 @@ line-height:100%;
     padding: auto;
 
 }
+
 
 .margen-2{
   height: 2px;
@@ -218,8 +207,8 @@ line-height:100%;
 
 .parallax-navigator{
   display: flex;
-  flex-wrap: wrap;
-  width: 600px;
+  flex-wrap: nowrap;
+  max-width: 1000px;
   margin: auto;
   margin-top: 60px;
   justify-content: space-around;

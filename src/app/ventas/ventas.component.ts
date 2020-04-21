@@ -18,6 +18,7 @@ export class VentasComponent implements OnInit {
   margen1:string="assets/ventas/banner/margen1.png"
   descripcion:string='¿Te interesa incrementar tus ventas y acortar el tiempo que te toma cerrar una venta? Aprende a vender tangibles e intangibles como los mejores vendedores.'
   pathbanner:string="assets/ventas/banner/path_banner.png"
+
   //seccion dos
   objetivo: string ="OBJETIVO"
   descripcionsecciondos:string="Al finalizar el curso, el participante habrá practicado las técnicas de ventas mas efectivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relasciones productivas de largo plazo. Practizarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
@@ -47,16 +48,21 @@ export class VentasComponent implements OnInit {
     ]
 
   beneficios:string="BENEFICIOS DEL CURSO"
-
-  izq:string="assets/ventas/seccion-dos/flechaderecha.png"
-  der:string="assets/ventas/seccion-dos/flechaizquierda.png"
-  ico:string="assets/ventas/seccion-dos/incluye1.png"
-
-  selectedb:string="comunicacion"
+  selectedb:number=0
+  selectedi:number=0
   colorcheck=false
+
+        banderarombof(beneficio:number){
+          this.selectedb=beneficio;
+        }
+
+        filterItemsOfType(beneficio){
+          let beneficiof=this.beneficiosobj.filter(x => x.beneficio == beneficio);
+          return beneficiof;
+        }
   public beneficiosobj:any[] =[
     {
-      "beneficio": "comunicacion",
+      "beneficio": 1,
       "titulo":"COMUNICACIÓN EFECTIVA",
       "descripciones":[
         {
@@ -78,7 +84,7 @@ export class VentasComponent implements OnInit {
       }
     },
     {
-      "beneficio": "desarrollo",
+      "beneficio": 2,
       "titulo":"DESARROLLO DE EQUIPOS",
       "descripciones":[
         {
@@ -92,7 +98,7 @@ export class VentasComponent implements OnInit {
       }
     },
     {
-      "beneficio": "liderazgo",
+      "beneficio": 3,
       "titulo":"LIDERAZGO EFECTIVO O INEFECTIVO",
       "descripciones":[
         {
@@ -106,7 +112,7 @@ export class VentasComponent implements OnInit {
       }
     },
     {
-      "beneficio": "valores",
+      "beneficio": 4,
       "titulo":"LIDERAZGO CON VALORES Y PRINCIPIOS",
       "descripciones":[
         {
@@ -120,7 +126,7 @@ export class VentasComponent implements OnInit {
       }
     },
     {
-      "beneficio": "estilo",
+      "beneficio": 5,
       "titulo":"DESCUBRE TU ESTILO DE LIDERAZGO",
       "descripciones":[
         {
@@ -138,7 +144,7 @@ export class VentasComponent implements OnInit {
       }
     },
     {
-      "beneficio": "modelos",
+      "beneficio": 6,
       "titulo":"MODELOS DE COACHING",
       "descripciones":[
         {
@@ -162,32 +168,59 @@ export class VentasComponent implements OnInit {
 
   ]
 
-  public slides =
-    [
+
+
+
+  izq:string="assets/ventas/seccion-dos/flechaderecha.png"
+  der:string="assets/ventas/seccion-dos/flechaizquierda.png"
+
+
+banderaincluyeico(){
+  return this.incluyeobj[this.selectedi].ico
+}
+
+banderaincluyetext(){
+  return this.incluyeobj[this.selectedi].titulo
+}
+
+incluyeizq(){
+
+  if(this.selectedi==0){
+    this.selectedi=this.incluyeobj.length-1;
+  }else{
+  this.selectedi-=1;
+  }
+}
+
+incluyeder(){
+
+  if(this.selectedi==(this.incluyeobj.length-1)){
+    this.selectedi=0
+  }else{
+  this.selectedi+=1;
+  }
+}
+      public incluyeobj:any[] =[
         {
-          src: "assets/ventas/images/svg/carousel/Onboarding1.svg"
-        },
-        {
-          src: "assets/ventas/images/svg/carousel/Onboarding2.svg"
-        },
-        {
-          src: "assets/ventas/images/svg/carousel/Onboarding3.svg"
-        }
-    ];
+          "titulo":"Asesoría Online",
+          "ico":"assets/ventas/seccion-dos/incluye1.png"
+      },
+      {
+        "titulo":"Manual del curso",
+        "ico":"assets/ventas/seccion-dos/incluye2.png"
+      },
+      {
+        "titulo":"Reconocimiento con validez oficial STPS",
+        "ico":"assets/ventas/seccion-dos/incluye3.png"
+      },
+      {
 
-
-      filterItemsOfType(beneficio){
-        let descripciones:any[]=[];
-        let beneficiof=this.beneficiosobj.filter(x => x.beneficio == beneficio);
-
-        return beneficiof;
-
+        "titulo":"Test, evaluaciones y seguimiento",
+        "ico":"assets/ventas/seccion-dos/incluye4.png"
       }
+      ]
 
-      banderarombof(beneficio:string){
-        this.selectedb=beneficio;
-      }
-      //seccion SeccionTres
+      //SeccionTres
       inversion: string ="INVERSIÓN"
       margen4:string="assets/ventas/seccion-tres/margen4.png"
       margen5:string="assets/ventas/seccion-tres/margen5.png"

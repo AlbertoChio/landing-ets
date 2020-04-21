@@ -74,11 +74,13 @@
 
 
   <div class="box" [ngStyle]="{'background-color': selectedb==beneficio.beneficio? 'rgb(240, 56, 56)':'rgb(255, 255, 255)'}" *ngFor="let beneficio of beneficiosobj" (mouseenter)="banderarombof(beneficio.beneficio)" >
-    <img class="ico"src="{{beneficio.ico.blanco}}" align="top"  *ngIf="selectedb==beneficio.beneficio else other_content">
-    <ng-template #other_content>
-    <img #other_content class="ico"src="{{beneficio.ico.rojo}}" align="top">
-      </ng-template>
 
+      <img class="ico"src="{{beneficio.ico.blanco}}" *ngIf="selectedb==beneficio.beneficio else other_content" alt="ico">
+    <ng-template #other_content>
+
+    <img #other_content class="ico"src="{{beneficio.ico.rojo}}" alt="ico">
+
+      </ng-template>
 
     <div class="T4" [ngStyle]="{'color': selectedb==beneficio.beneficio? 'rgb(255, 255, 255)': 'black'}">
       {{beneficio.titulo}}
@@ -110,17 +112,17 @@
       ESTE CURSO INCLUYE
     </div>
     <div class="parallax-navigator">
-      <div [ngStyle]="{'height': 'auto'}">
-      <img src="{{der}}" alt="izq">
+      <div [ngStyle]="{'height': 'auto'}" (click)="incluyeizq()">
+      <img class="navigator" src="{{der}}" alt="izq">
       </div>
       <div [ngStyle]="{'height': 'auto'}">
-      <img src="{{ico}}" alt="ico">
+      <img src={{banderaincluyeico()}} alt="ico">
       </div>
       <div class="P1">
-        coffe breack
+        {{banderaincluyetext()}}
       </div>
-      <div [ngStyle]="{'height': 'auto'}">
-      <img src="{{izq}}" alt="der">
+      <div [ngStyle]="{'height': 'auto'}" (click)="incluyeder()">
+      <img class="navigator" src="{{izq}}" alt="der">
       </div>
     </div>
 
