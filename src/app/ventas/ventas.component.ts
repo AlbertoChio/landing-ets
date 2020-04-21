@@ -56,86 +56,32 @@ export class VentasComponent implements OnInit {
           this.selectedb=beneficio;
         }
 
-        filterItemsOfType(beneficio){
+        filterItemsOfType(beneficio:number){
           let beneficiof=this.beneficiosobj.filter(x => x.beneficio == beneficio);
           return beneficiof;
         }
   public beneficiosobj:any[] =[
     {
+      "beneficio": 0,
+      "titulo":"NO VENDERAS POR PRECIO",
+      "descripciones":[
+        {
+          "id": 1,
+          "descripcion":"DEJARAS DE VENDER POR PRECIO, porque el valor de tu ofera es superior al precio de tu inversión y eso le quedará muy claro al cliente o prospecto, utilizando las técnicas de venta correcta. Venderás a partir de los diferenciadores de tu solución o tus productos."
+        }
+      ],
+      "ico":{
+        "rojo":"assets/ventas/seccion-dos/venderasrojo.png",
+        "blanco":"assets/ventas/seccion-dos/venderasblanco.png"
+      }
+    },
+    {
       "beneficio": 1,
-      "titulo":"COMUNICACIÓN EFECTIVA",
+      "titulo":"IDENTIFICA TU ESTILO DE VENTA",
       "descripciones":[
         {
           "id": 1,
-          "descripcion":"Practicará la comunicación efectiva para comunicarce a todos los nivieles de la organización y para saber dar ordenes e instrucciones a sus colaboradores."
-        },
-        {
-          "id": 2,
-          "descripcion":"Practicará la motivación positiva a través del reconocimiento, adecuado a su mensaje a cada individuo y sus motivaciones."
-        },
-        {
-          "id": 3,
-          "descripcion":"Practicará la retroalimentación positiva y negativa de acuerdo con los modelos de comunicación asertiva."
-        }
-      ],
-      "ico":{
-        "rojo":"assets/ventas/seccion-dos/comunicacionrojo.png",
-        "blanco":"assets/ventas/seccion-dos/comunicacionblanco.png"
-      }
-    },
-    {
-      "beneficio": 2,
-      "titulo":"DESARROLLO DE EQUIPOS",
-      "descripciones":[
-        {
-          "id": 1,
-          "descripcion":"Practicará las estrategías que le permitirán integrar y desarrollar equipos de trabajo efectivos, por medio de la implementación de códigos de equipo."
-        }
-      ],
-      "ico":{
-        "rojo":"assets/ventas/seccion-dos/desarrollorojo.png",
-        "blanco":"assets/ventas/seccion-dos/desarrolloblanco.png"
-      }
-    },
-    {
-      "beneficio": 3,
-      "titulo":"LIDERAZGO EFECTIVO O INEFECTIVO",
-      "descripciones":[
-        {
-          "id": 1,
-          "descripcion":"Identificará si su liderazgo es efectivo o inefectivo, y cuales son las causas."
-        }
-      ],
-      "ico":{
-        "rojo":"assets/ventas/seccion-dos/efectivorojo.png",
-        "blanco":"assets/ventas/seccion-dos/efectivoblanco.png"
-      }
-    },
-    {
-      "beneficio": 4,
-      "titulo":"LIDERAZGO CON VALORES Y PRINCIPIOS",
-      "descripciones":[
-        {
-          "id": 1,
-          "descripcion":"Identificará las variables para aplicar el liderazgo correcto con acuerdo a la teoría de liderazgo situacional."
-        }
-      ],
-      "ico":{
-        "rojo":"assets/ventas/seccion-dos/valoresrojo.png",
-        "blanco":"assets/ventas/seccion-dos/valoresblanco.png"
-      }
-    },
-    {
-      "beneficio": 5,
-      "titulo":"DESCUBRE TU ESTILO DE LIDERAZGO",
-      "descripciones":[
-        {
-          "id": 1,
-          "descripcion":"Descubre tu estilo de liderazgo prodominante y su origen por medio de un test mismo que se analizará de manera personalizada."
-        },
-        {
-          "id": 2,
-          "descripcion":"Aprenderá las conductas y actitudes de cada estilo de liderazgo, así como sus ventajas y desventajas."
+          "descripcion":"Identificará su estilo favorito para vender, reconociendo que puede desarrollar rasgos de vendedores estrella."
         }
       ],
       "ico":{
@@ -144,25 +90,79 @@ export class VentasComponent implements OnInit {
       }
     },
     {
-      "beneficio": 6,
-      "titulo":"MODELOS DE COACHING",
+      "beneficio": 2,
+      "titulo":"TÉCNICAS DE VENTA",
       "descripciones":[
         {
           "id": 1,
-          "descripcion":"Practicará los modelos de coaching para resolver los problemas típicos de desempeño y de malas conductas o actitudes de su equipo de trabajo y en lo individual."
+          "descripcion":"Desarrollará las competencias de un vendedor estrella con técnicas."
         },
         {
           "id": 2,
-          "descripcion":"Practicará técnicas de negociación para conceder, en lugar de ceder."
+          "descripcion":"Aprenderá técnicas para vender sin que parezca que está vendiendo."
         },
         {
           "id": 3,
-          "descripcion":"Reconocerá la inteligencia emocional como una herramienta prioritaria en la toma de decisiones y generadora de relaciones armónicas."
+          "descripcion":"Podrá articular argumentaciones y presentaciones de venta en 30 seg. con propuesta de valor."
+        },
+        {
+          "id": 4,
+          "descripcion":"Cuando sea necesario aplicará técnicas de cierre de una manera natural, aunque si aplica correctamente las técnicas aprendidas en el curso, el cierre se dará por sí solo."
         }
       ],
       "ico":{
-        "rojo":"assets/ventas/seccion-dos/modelosrojo.png",
-        "blanco":"assets/ventas/seccion-dos/modelosblanco.png"
+        "rojo":"assets/ventas/seccion-dos/tecnicasrojo.png",
+        "blanco":"assets/ventas/seccion-dos/tecnicasblanco.png"
+      }
+    },
+    {
+      "beneficio": 3,
+      "titulo":"NO MÁS OBJECIONES",
+      "descripciones":[
+        {
+          "id": 1,
+          "descripcion":"Las objeciones se reducirán a su minima expresión."
+        },
+        {
+          "id": 3,
+          "descripcion":"Por primera vez te sentirás cómodo en el manejo de objeciones."
+        }
+      ],
+      "ico":{
+        "rojo":"assets/ventas/seccion-dos/objecionesrojo.png",
+        "blanco":"assets/ventas/seccion-dos/objecionesblanco.png"
+      }
+    },
+    {
+      "beneficio": 4,
+      "titulo":"CONOCERÁS A TU CLIENTE",
+      "descripciones":[
+        {
+          "id": 1,
+          "descripcion":"Aprenderá técnicas de comunicación para adecuar el mesaje de venta de acuerdo a la personalidad y motivación del cliente."
+        },
+        {
+          "id": 2,
+          "descripcion":"Practicará técnicas de comunicación efectiva como escucha activa y empatia para crear conexión emocional con el cliente."
+        }
+      ],
+      "ico":{
+        "rojo":"assets/ventas/seccion-dos/conocerasrojo.png",
+        "blanco":"assets/ventas/seccion-dos/conocerasblanco.png"
+      }
+    },
+    {
+      "beneficio": 5,
+      "titulo":"ASESORA, NO VENDAS",
+      "descripciones":[
+        {
+          "id": 1,
+          "descripcion":'El cliente experimentará la sensación de que está siendo asesorado, no parecera que estás vendiendo y "empujando la venta".'
+        }
+      ],
+      "ico":{
+        "rojo":"assets/ventas/seccion-dos/asesorarojo.png",
+        "blanco":"assets/ventas/seccion-dos/asesorablanco.png"
       }
     }
 
