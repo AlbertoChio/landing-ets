@@ -21,7 +21,7 @@ export class VentasComponent implements OnInit {
 
   //seccion dos
   objetivo: string ="OBJETIVO"
-  descripcionsecciondos:string="Al finalizar el curso, el participante habrá practicado las técnicas de ventas mas efectivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relasciones productivas de largo plazo. Practizarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
+  descripcionsecciondos:string="Al finalizar el curso, el participante habrá practicado las técnicas de ventas mas efectivas, que acortan el tiempo del cierre y aceleran la toma de decisiones de tus clientes; desde una perspectiva de tus diferenciadores, incrementando tus ventas, al mismo tiempo que construyes relaciones productivas de largo plazo. Practicarás las técnicas de ventas más utilizadas por los vendedores más exitosaos en todo el mundo."
   margen2:string="assets/ventas/seccion-dos/margen2.png"
 
   public caracteristicasobj:any[] =[
@@ -37,12 +37,12 @@ export class VentasComponent implements OnInit {
     },
     {
       "titulo":"Técnica didáctica",
-      "caracteristica": "En ExcellenT practicaras técnicas de aprendizaje acelerado a través de ejercicios individuales y grupales, asi cmomo dinámicas de role playing.",
+      "caracteristica": "En ExcellenT practicaras técnicas de aprendizaje acelerado a través de ejercicios individuales y grupales, asi como dinámicas de role playing.",
       "ico":"assets/ventas/seccion-dos/medida.png"
     },
     {
       "titulo":"Instructor experto",
-      "caracteristica": "Instructor especialista con más de 20 años de experiencia en ventas. Ha capacitado a la fuerza de ventas de organizaciones transnacionales en todos los sectoresde la industria.",
+      "caracteristica": "Instructor especialista con más de 20 años de experiencia en ventas. Ha capacitado a la fuerza de ventas de organizaciones transnacionales en todos los sectores de la industria.",
       "ico":"assets/ventas/seccion-dos/instructor.png"
     }
     ]
