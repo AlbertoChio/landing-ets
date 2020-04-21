@@ -224,32 +224,33 @@ incluyeder(){
       inversion: string ="INVERSIÓN"
       margen4:string="assets/ventas/seccion-tres/margen4.png"
       margen5:string="assets/ventas/seccion-tres/margen5.png"
+      descuento:string="assets/ventas/seccion-tres/disccountt.png"
       titulosemana:string="Presencial-ENTRE SEMANA"
       preciosemana:string="$1,999"
       pregular:string="Ahorras $2,400"
       public precios:any[] =[
         {
           "id": "1",
-          "titulo":"Presencial-ENTRE SEMANA",
-          "precio":"$2,850",
-          "ahorras":"Ahorras $4,800",
+          "titulo":"ENTRE SEMANA",
+          "precio":"$1,700.00",
+          "ahorras":"Ahorras $1,700.00",
           "horas": "15 horas",
-          "preciolista": "Precio de lista: $4,400",
-          "fechas":"Del al de ",
-          "horario":"Horario: 16:00 p.m. a 19:00 p.m.",
-          "sesiones": "Sesiones de 3 horas",
+          "preciolista": "Precio de lista: $3,400.00",
+          "fechas":"Del 18 al 22 de Mayo",
+          "horario":"Horario: 16:00 horas a 19:00 horas",
+          "sesiones": "5 sesiones de 3 horas",
           "lugar":"CDMX"
         },
         {
           "id": "2",
-          "titulo":"Presencial-ENTRE SEMANA",
-          "precio":"$2,850",
-          "ahorras":"Ahorras $4,800",
+          "titulo":"FINES DE SEMANA",
+          "precio":"$1,900.00",
+          "ahorras":"Ahorras $1,900.00",
           "horas": "15 horas",
-          "preciolista": "Precio de lista: $4,400",
-          "fechas":"Del al de ",
-          "horario":"Horario: 16:00 p.m. a 19:00 p.m.",
-          "sesiones": "Sesiones de 3 horas",
+          "preciolista": "Precio de lista: $3,800.00",
+          "fechas":"Del 16 al 23 de Mayo",
+          "horario":"Horario: 08:00 horas a 15:30 horas",
+          "sesiones": "2 Sesiones de 7.5 horas",
           "lugar":"CDMX"
         }
       ]

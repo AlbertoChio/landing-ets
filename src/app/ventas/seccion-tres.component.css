@@ -27,7 +27,25 @@
 
   }
 
+.descuento{
+  background-color: red;
+  padding: 5px;
+  border-radius: 100px;
+  color: white;
+  font-size: 20px;
+  width: 70px;
+  margin-left: 20px;
+  text-align: right;
+}
+.div-inversion-wrap{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 
+}
 
     .div-margen4{
       height: 2px;

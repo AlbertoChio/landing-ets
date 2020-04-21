@@ -143,7 +143,14 @@
 <div class="i-container">
   <div class="div-inversion-g" *ngFor="let precio of precios">
     <div class="div-inversion-encabezado">
-      <div class="T5">{{precio.titulo}}</div>
+      <div class="div-inversion-wrap">
+
+        <div class="T5">{{precio.titulo}}</div>
+        <div class="descuento">
+        -50%
+        </div>
+      </div>
+
       <div class="div-margen4">
         <img class="margen-4"src="{{margen4}}" alt="margen">
       </div>
@@ -189,7 +196,7 @@
           <img class="margen-1"src="{{margen2}}"alt="margen" >
         </div>
         <div class="div-banner-descripcion">
-        <p class="P2seccioncuatro">{{descripcion}}</p>
+        <p class="P2seccioncuatro">{{descripcionseccioncuatro}}</p>
         </div>
       </div>
     </div>
