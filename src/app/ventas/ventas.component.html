@@ -6,13 +6,15 @@
   <div class="banner-overlay">
     <div class="div-banner-wrap">
       <div class="div-banner-curso">
-      <p class="T1">{{curso}} {{tipocurso}}</p>
+      <p class="T1">{{curso}} </p>
+      <p class="T1">{{tipocurso}}</p>
+      <p class="T1"  [ngStyle]="{'color':'#f03838'}" ><b>¡Paga 1 curso y toma 2!</b></p>
       </div>
       <div class="div-margen1">
         <img class="margen-1"src="{{margen1}}"alt="margen" >
       </div>
       <div class="div-banner-descripcion">
-      <p class="P1">{{descripcion}}</p>
+      <p class="P1-Banner">{{descripcion}}</p>
       </div>
     </div>
   </div>
@@ -31,7 +33,7 @@
       <img class="margen-2"src="{{margen2}}"alt="margen" >
     </div>
     <div class="div-descripcion-seccion-dos">
-    <p class="P2">{{descripcionsecciondos}}</p>
+    <p class="P2-Objetivo">{{descripcionsecciondos}}</p>
     </div>
   </div>
 </div>
@@ -47,7 +49,7 @@
       <div class="T3">
         {{caracteristica.titulo}}
       </div>
-      <div class="P2 caracteristica-desc-wrap">
+      <div class="P2-Objetivo caracteristica-desc-wrap">
         {{caracteristica.caracteristica}}
       </div>
   </div>
@@ -94,7 +96,7 @@
 
   <div class="b-container" >
     <ul class="alinearbene"*ngFor="let beneficio of filterItemsOfType(selectedb)">
-      <li class="P2" *ngFor="let descripcion of beneficio.descripciones" >
+      <li class="P2-Objetivo" *ngFor="let descripcion of beneficio.descripciones" >
         {{descripcion.descripcion}}
 
       </li>
@@ -129,7 +131,7 @@
   </div>
 </div>
 
-<div class="div-objetivo">
+<div class="div-inversion">
   <div>
     <div>
     <h3 class="T2">{{inversion}}</h3>
@@ -138,53 +140,48 @@
       <img class="margen-1"src="{{margen2}}"alt="margen" >
     </div>
   </div>
-</div>
+  <div class="i-container">
+    <div class="div-inversion-g" *ngFor="let precio of precios">
+      <div class="div-inversion-encabezado">
+        <div class="div-inversion-wrap">
+          <div class="descuento">
+           Promoción 2x1
+          </div>
+          <div class="T5">{{precio.titulo}}</div>
 
-<div class="i-container">
-  <div class="div-inversion-g" *ngFor="let precio of precios">
-    <div class="div-inversion-encabezado">
-      <div class="div-inversion-wrap">
+        </div>
 
-        <div class="T5">{{precio.titulo}}</div>
-        <div class="descuento">
-         -50%
+        <div class="div-margen4">
+          <img class="margen-4"src="{{margen4}}" alt="margen">
+        </div>
+        <div class="P3">
+        {{precio.precio}}
         </div>
       </div>
+      <div class="div-margen5">
+        <img class="margen-5"src="{{margen5}}"alt="margen" >
+      </div>
+      <div class="div-inversion-cuerpo">
+      <div class="P2">
+        Horas: {{precio.horas}}
+      </div>
+      <div class="P2">
+        Fechas: {{precio.fechas}}
+      </div>
+      <div class="P2">
+        Horario: {{precio.horario}}
+      </div>
+      <div class="P2">
+        Sesiones: {{precio.sesiones}}
+      </div>
+      </div>
+      </div>
+    </div>
+</div>
 
-      <div class="div-margen4">
-        <img class="margen-4"src="{{margen4}}" alt="margen">
-      </div>
-      <div class="P3">
-      {{precio.precio}}
-      </div>
-      <div class="P4">
-      {{precio.ahorras}}
-      </div>
-    </div>
-    <div class="div-margen5">
-      <img class="margen-5"src="{{margen5}}"alt="margen" >
-    </div>
-    <div class="div-inversion-cuerpo">
-    <div class="P2">
-      {{precio.horas}}
-    </div>
-    <div class="P2">
-      {{precio.preciolista}}
-    </div>
-    <div class="P2">
-      {{precio.fechas}}
-    </div>
-    <div class="P2">
-      {{precio.horario}}
-    </div>
-    <div class="P2">
-      {{precio.sesiones}}
-    </div>
-    </div>
-    </div>
-  </div>
+
   <div class="background">
-    <div class="div-objetivo">
+    <div class="div-contacto">
       <div>
         <div>
         <h3 class="T2seccioncuatro">{{titulo}}</h3>
@@ -201,7 +198,7 @@
       <div class="div-tarjetacontacto div-descarga-cuerpo">
 
         <div class="div-contacto">
-          <div class="T3">
+          <div class="T33">
         VISÍTANOS
           </div>
           <div class="P22">
@@ -210,7 +207,7 @@
         </div>
 
         <div class="div-contacto">
-          <div class="T3">
+          <div class="T33">
         LLÁMANOS
           </div>
           <div class="P22">
@@ -219,30 +216,33 @@
           <div class="P22">
         55 1948 2497
           </div>
+          <div class="P22">
+        55 3733 7844
+          </div>
         </div>
 
         <div class="div-contacto">
-          <div class="T3">
+          <div class="T33">
         ENVÍA UN EMAIL
           </div>
           <div class="P22">
-        correo
+        contacto@excellentraining.com
           </div>
         </div>
 
         </div>
       <div class="div-contactouser div-descarga-cuerpo">
 
-        <form >
-                <label for="fname">Nombre</label>
-                <input type="text" id="fname" name="firstname" placeholder="Nombre">
-                <label for="lname">Correo</label>
-                <input type="text" id="lname" name="lastname" placeholder="Tu correo">
-                <label for="lname">Teléfono</label>
-                <input type="text" id="lname" name="lastname" placeholder="Tu teléfono">
-                <label for="subject">Por qué te interesa este curso?</label>
-                <textarea id="subject" name="subject" placeholder="Escribe algo" style="height:170px"></textarea>
-                <input type="submit" value="Recibir temario">
+        <form (ngSubmit) = "sendemail()">
+                <label class="labeltextarea" for="fname">Nombre</label>
+                <input class="areatext" type="text" id="fname" name="firstname" [(ngModel)]="cliente.nombre" placeholder="Nombre">
+                <label class="labeltextarea"  for="idcorreo">Correo</label>
+                <input class="areatext" type="text" id="idcorreo" name="correo" [(ngModel)]="cliente.correo" placeholder="Tu correo">
+                <label class="labeltextarea" for="idtele">Teléfono</label>
+                <input class="areatext" type="text" id="idtele" name="telefono" [(ngModel)]="cliente.telefono" placeholder="Tu teléfono">
+                <label class="labeltextarea" for="subject">Por qué te interesa este curso?</label>
+                <textarea class="areatext"  id="subject" name="subject" [(ngModel)]="cliente.razon" placeholder="Escribe algo"></textarea>
+                <input class="boton" type="submit" value="Recibir temario">
               </form>
             </div>
         </div>

@@ -1,0 +1,1238 @@
+@media only screen and (min-device-width: 480px) {
+
+
+  .T33{
+  color:#d04109;
+  font-size: 28px;
+  text-align: left;
+  }
+
+
+.banner {
+  width:100%;
+  min-height: 1200px;
+    /* Flexbox stuff */
+    /* Background styles */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logo {
+  max-width: 300px;
+  height:auto;
+  margin: 15px;
+  padding-bottom: 70px;
+}
+
+.div-logo {
+  margin: 0px;
+}
+
+.div-banner-wrap{
+
+}
+
+.banner-overlay{
+  padding: 30px;
+  margin: auto;
+  max-height: 1000px;
+  max-width: 1600px;
+  widows: auto;
+  background: rgba(25, 25, 25, .7);
+  position:relative;
+
+ }
+
+ .T1{
+  color: #ffffff;
+  font-size: 58px;
+  text-align: center;
+   line-height:50px;
+}
+
+
+.P1-Banner{
+ color: #ffffff;
+ font-size: 44px;
+ text-align: center;
+ line-height:100%
+}
+
+.div-margen1{
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+
+.div-margen1-{
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+
+.div-banner-path{
+}
+
+.margen-1{
+  max-height: 2px;
+  max-width: 621px;
+}
+
+.div-banner-descripcion{
+  position: relative;
+  max-width: 1600px;
+}
+
+.div-banner-curso{
+  max-width: 1600px;
+margin: auto;
+}
+
+.banner-path{
+  display: grid;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.background {
+  width:100%;
+  background: rgb(37, 45, 58);
+}
+
+.div-objetivo{
+  padding: 30px;
+  margin: auto;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  padding-bottom: 60px;
+  align-content: center;
+}
+
+.T2seccioncuatro{
+  color:#ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.P2seccioncuatro{
+color:#ffffff;
+font-size: 24px;
+text-align: center;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+.div-margen1seccioncuatro{
+  height: 2px;
+  max-height: 2px;
+    text-align: center;
+    position:relative;
+}
+
+
+.i-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  margin: auto;
+  justify-content: center;
+}
+
+.div-descarga-cuerpo{
+  background: rgb(243, 243, 243);
+  height:auto;
+  padding: 10px;
+}
+
+.div-tarjetacontacto{
+  width: 420px;
+  margin: 10px;
+}
+
+.div-contactouser{
+  width: 500px;
+  margin: 10px;
+}
+
+.div-contacto{
+  margin-top: 45px;
+  margin-left: 30px;
+  margin-bottom: 45px;
+}
+
+.T3{
+color:#d04109;
+font-size: 28px;
+text-align: left;
+}
+
+.P22{
+color:#000000;
+font-size: 20px;
+text-align: left;
+padding-top: 10px;
+line-height:100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 10px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: #d04109;
+  font-size: 15px;
+}
+
+label{
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+
+.div-objetivo{
+  padding: 30px;
+  margin: auto;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  padding-bottom: 60px;
+  align-content: center;
+}
+
+.ico{
+  padding-bottom: 10px;
+}
+.div-beneficios{
+  width: 100%;
+}
+
+.div-descripcion-seccion-dos{
+    padding-right:  50px;
+    padding-left:   50px;
+    margin: auto;
+    max-height: 1000px;
+    min-width: 700px;
+    max-width: 1300px;
+
+    align-content: center;
+    position:relative;
+
+  }
+
+.div-caracteristica-wrap{
+display: flex;
+padding-bottom: 20px;
+}
+
+.frame{
+  display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	align-content: center;
+  }
+
+.b-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+.box {
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+   height: 120px;
+   width: 120px;
+   cursor: pointer;
+   border: .5px solid #303840;
+  margin-top: 60px;
+   margin-left: 60px;
+  }
+
+.navigator{
+   cursor: pointer;
+}
+.div-caracteristicas-g{
+    display:flex;
+    flex-wrap: wrap;
+    max-width:1300px;
+    margin: auto;
+    padding: auto;
+    padding-bottom: 100px;
+
+}
+
+.b-container{
+  position: relative;
+  top:50px;
+  margin: auto;
+  padding-bottom: 60px;
+  text-align:
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  font-size: 170%;
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+}
+
+ul li {
+  padding-bottom: 20px;
+}
+
+
+.div-caracteristica{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.div-caracteristicas-ico{
+    padding: 20px;
+}
+
+.caracteristica-desc-wrap{
+  max-width: 400px;
+
+}
+
+.objetivo-desc-wrap{
+  max-width: 430px;
+
+}
+
+.T2{
+  color:#002338;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100%;
+}
+
+.T4{
+  color:#002338;
+  font-size: 10px;
+  text-align: center;
+  line-height: 100%;
+}
+
+
+.T3{
+color:#f03838;
+font-size: 28px;
+text-align: left;
+padding-bottom: 20px;
+}
+
+.P1{
+color:#ffffff;
+font-size: 30px;
+text-align: justify;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+.alinearbene{
+  max-width:1300px;
+  text-align:center;
+  margin:0 auto;
+}
+.P2-Objetivo{
+color:#000000;
+font-size: 24px;
+text-align: justify;
+line-height:100%;
+}
+
+.div-margen2-seccion-dos{
+  height: 2px;
+  max-height: 2px;
+    text-align: center;
+    position:relative;
+    padding: auto;
+
+}
+
+
+.margen-2{
+  height: 2px;
+  max-height: 2px;
+  max-width: 621px;
+}
+
+.div-banner-descripcion{
+  margin: auto;
+  max-width: 1600px;
+}
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 283px;
+  margin: auto;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parrallax-overlay{
+  background: rgba(0, 0, 0,.6);
+  margin: 0px;
+  height: 283px;
+  padding: 30px;
+}
+
+.parallax-navigator{
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items:baseline;
+}
+
+.div-objetivo{
+  padding: 30px;
+  padding-bottom: 50px;
+  margin: auto;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  align-content: center;
+}
+.T2{
+  color:#002338;
+  font-size: 50px;
+  text-align: center;
+}
+
+.margen-4{
+  height: 2px;
+  max-height: 2px;
+  max-width: 300px;
+}
+
+.margen-5{
+  display: grid;
+  margin: 0 auto;
+  width: 380px;
+
+}
+
+.descuento{
+  background-color: red;
+  padding: 5px;
+  border-radius: 1000px;
+  color: white;
+  font-size: 20px;
+  width: auto;
+
+  text-align: center;
+}
+.div-inversion-wrap{
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+  .div-margen4{
+    height: 2px;
+    max-height: 2px;
+      text-align: center;
+      position:relative;
+padding-bottom: 40px;
+  }
+
+  .div-margen5{
+    position: relative;
+  }
+.div-banner-descripcion{
+  margin: auto;
+  max-width: 1500px;
+}
+
+.T5{
+
+  color:#d88500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.P3{
+color:#ffffff;
+font-size: 35px;
+text-align: center;
+line-height:100%;
+margin: auto;
+padding: auto;
+padding-bottom: 10px;
+}
+
+.P4{
+color:#ffffff;
+font-size: 12px;
+text-align: center;
+line-height:100%;
+margin: auto;
+padding: auto;
+}
+
+.P2{
+color:#000000;
+font-size: 20px;
+text-align: left;
+line-height:100%;
+padding: 20px;
+
+}
+
+.i-container{
+display: flex;
+flex-wrap: wrap;
+max-width: 600px;
+margin: auto;
+}
+
+.div-inversion-g{
+width: 380px;
+height: 600px;
+margin: 10px;
+margin-bottom: 10px;
+
+}
+
+.div-inversion-encabezado{
+background: rgb(32, 40, 53);
+height:auto;
+padding: 10px;
+}
+.div-inversion-cuerpo{
+background: rgb(243, 243, 243);
+height:auto;
+padding: 10px;
+}
+
+
+.background {
+  width:100%;
+  background: rgb(37, 45, 58);
+}
+
+.div-objetivo{
+  padding: 30px;
+  margin: auto;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  padding-bottom: 60px;
+  align-content: center;
+}
+
+.T2seccioncuatro{
+  color:#ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.P2seccioncuatro{
+color:#ffffff;
+font-size: 24px;
+text-align: center;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+.div-margen1seccioncuatro{
+  height: 2px;
+  max-height: 2px;
+    text-align: center;
+    position:relative;
+}
+
+
+.i-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 1000px;
+  min-width: 700px;
+  max-width: 1300px;
+  margin: auto;
+  justify-content: center;
+}
+
+.div-descarga-cuerpo{
+  background: rgb(243, 243, 243);
+  height:auto;
+  padding: 10px;
+}
+
+
+
+.div-contactouser{
+  width: 500px;
+  margin: 10px;
+}
+
+.div-contacto{
+  margin-top: 45px;
+  margin-left: 30px;
+  margin-bottom: 45px;
+}
+
+.T3{
+color:#d04109;
+font-size: 28px;
+text-align: left;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 10px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: #d04109;
+  font-size: 15px;
+}
+
+label{
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+}
+
+@media only screen and (max-device-width: 480px) {
+
+
+  .div-inversion{
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 60px;
+    min-height: 1200px;
+    align-content: center;
+
+  }
+
+.banner {
+  width:100%;
+  min-height: 600px;
+    /* Flexbox stuff */
+    /* Background styles */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logo {
+  max-width: 150px;
+  height:auto;
+  margin: 7px;
+  padding-bottom: 35px;
+}
+
+.div-logo {
+  margin: 0px;
+}
+
+.div-banner-wrap{
+
+}
+
+.banner-overlay{
+  padding: 10px;
+  margin: auto;
+  max-height: 400px;
+  max-width: 800px;
+  widows: auto;
+  background: rgba(25, 25, 25, .7);
+  position:relative;
+  top:40px;
+ }
+
+ .T1{
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+   line-height:40px;
+   margin:0px;
+}
+
+
+.P1-Banner{
+  display:none;
+ color: #ffffff;
+ font-size: 22px;
+ text-align: center;
+ line-height:95%;
+ position:relative;
+ top: -60px;
+}
+
+.div-margen1{
+    text-align: center;
+    position: relative;
+    top: -25px;
+
+}
+
+
+.margen-1{
+  max-height: 1px;
+  max-width: 310px;
+}
+
+.div-banner-descripcion{
+  position: relative;
+  max-width: 800px;
+}
+
+.div-banner-curso{
+  max-width: 800px;
+margin: auto;
+}
+
+.banner-path{
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.background {
+  width:100%;
+  background: rgb(37, 45, 58);
+}
+
+.div-objetivo{
+  padding: 15px;
+  margin: auto;
+width: 100%;
+  padding-bottom: 60px;
+  align-content: center;
+  margin-top: 100px;
+}
+
+
+.T2seccioncuatro{
+  color:#ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.P2seccioncuatro{
+color:#ffffff;
+font-size: 12px;
+text-align: center;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+.div-margen1seccioncuatro{
+  height: 1px;
+  max-height: 1px;
+    text-align: center;
+    position:relative;
+}
+
+
+.i-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 500px;
+  min-width: 350px;
+  max-width: 650px;
+  margin: auto;
+  position:static;
+  justify-content: center;
+}
+
+.div-descarga-cuerpo{
+  background: rgb(243, 243, 243);
+  height:auto;
+  padding: 5px;
+}
+
+.div-tarjetacontacto{
+  width: 170px;
+  margin: 5px;
+}
+
+.div-contactouser{
+  width: 200px;
+  margin: 5px;
+}
+
+.div-contacto{
+  margin-top: 22px;
+  margin-left: 15px;
+  margin-bottom: 22px;
+}
+
+.T3{
+color:#d04109;
+font-size: 14px;
+text-align: left;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 10px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: #d04109;
+  font-size: 15px;
+}
+
+label{
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.ico{
+  padding-bottom: 10px;
+}
+.div-beneficios{
+  width: 100%;
+  padding: 20px;
+}
+
+.div-descripcion-seccion-dos{
+    padding-right:  50px;
+    padding-left:   50px;
+    margin: auto;
+    max-height: 1000px;
+    max-width: 500px;
+
+    align-content: center;
+    position:relative;
+
+  }
+
+.div-caracteristica-wrap{
+display: flex;
+padding-bottom: 25px;
+}
+
+.frame{
+  display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	align-content: center;
+  }
+
+.b-wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+.box {
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+   height: 100px;
+   width: 100px;
+   cursor: pointer;
+   border: .5px solid #303840;
+  margin-top: 40px;
+   margin-left: 40px;
+  }
+
+.navigator{
+   cursor: pointer;
+}
+.div-caracteristicas-g{
+    display:flex;
+    flex-wrap: wrap;
+    max-width:600px;
+    margin: auto;
+    padding: 15px;
+    padding: auto;
+    padding-bottom: 25px;
+
+}
+
+.b-container{
+  position: relative;
+  top:50px;
+  margin: auto;
+  padding-bottom: 60px;
+  text-align:
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  font-size: 170%;
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+}
+
+ul li {
+  padding-bottom: 20px;
+}
+
+
+.div-caracteristica{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.div-caracteristicas-ico{
+    padding: 20px;
+}
+
+.caracteristica-desc-wrap{
+  max-width: 400px;
+
+}
+
+.objetivo-desc-wrap{
+  max-width: 430px;
+
+}
+
+.T2{
+  color:#002338;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100%;
+}
+
+.T4{
+  color:#002338;
+  font-size: 9px;
+  text-align: center;
+  line-height: 100%;
+}
+
+
+.T3{
+color:#f03838;
+font-size: 28px;
+text-align: left;
+padding-bottom: 20px;
+}
+
+.P1{
+color:#ffffff;
+font-size: 20px;
+text-align: justify;
+margin: 0px;
+padding: 0px;
+line-height:100%;
+}
+
+.alinearbene{
+  max-width:1300px;
+  text-align:center;
+  margin:0 auto;
+}
+.P2-Objetivo{
+color:#000000;
+font-size: 20px;
+text-align: justify;
+line-height:100%;
+}
+
+.div-margen2-seccion-dos{
+  height: 2px;
+  max-height: 2px;
+  max-width: 600px;
+    text-align: center;
+    position:relative;
+    padding: auto;
+
+}
+
+
+.margen-2{
+  max-height: 1px;
+  max-width: 310px;
+}
+
+.div-banner-descripcion{
+  margin: auto;
+  max-width: 1600px;
+}
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 200px;
+  margin: auto;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parrallax-overlay{
+  background: rgba(0, 0, 0,.6);
+  margin: 0px;
+  height: 200px;
+  padding: 30px;
+}
+
+.parallax-navigator{
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items:baseline;
+}
+
+
+.margen-4{
+  height: 2px;
+  max-height: 2px;
+  max-width: 300px;
+}
+
+.margen-5{
+  display: grid;
+  margin: 0 auto;
+  width: 380px;
+
+}
+
+.descuento{
+background-color: red;
+padding: 1px;
+border-radius: 1000px;
+color: white;
+font-size: 20px;
+width: auto;
+
+text-align: center;
+}
+.div-inversion-wrap{
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+  .div-margen4{
+    height: 2px;
+    max-height: 2px;
+      text-align: center;
+      position:relative;
+padding-bottom: 40px;
+  }
+
+  .div-margen5{
+    position: relative;
+  }
+.div-banner-descripcion{
+  margin: auto;
+  max-width: 1500px;
+}
+
+.T5{
+
+  color:#d88500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.P3{
+color:#ffffff;
+font-size: 35px;
+text-align: center;
+line-height:100%;
+margin: auto;
+padding: auto;
+padding-bottom: 10px;
+}
+
+.P4{
+color:#ffffff;
+font-size: 12px;
+text-align: center;
+line-height:100%;
+margin: auto;
+padding: auto;
+}
+
+.P2{
+color:#000000;
+font-size: 20px;
+text-align: left;
+line-height:100%;
+padding: 20px;
+
+}
+
+.div-inversion-g{
+width: 380px;
+height: auto;
+margin: 10px;
+}
+
+.div-inversion-encabezado{
+background: rgb(32, 40, 53);
+height: auto;
+padding: 10px;
+}
+.div-inversion-cuerpo{
+background: rgb(243, 243, 243);
+height:auto;
+padding: 10px;
+}
+
+
+
+.div-margen1seccioncuatro{
+  height: 2px;
+  max-height: 2px;
+    text-align: center;
+    position:relative;
+}
+
+
+
+.div-descarga-cuerpo{
+  background: rgb(243, 243, 243);
+  height:auto;
+  padding: 10px;
+}
+
+
+
+
+.T3{
+color:#d04109;
+font-size: 28px;
+text-align: left;
+}
+
+.T33{
+color:#d04109;
+font-size: 14px;
+text-align: left;
+}
+
+.P22{
+color:#000000;
+font-size: 10px;
+text-align: left;
+padding-top: 5px;
+line-height:100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 10px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: #d04109;
+  font-size: 15px;
+}
+
+label{
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.labeltextarea{
+  line-height: 50%;
+}
+.areatext{
+  max-height: 20px;
+}
+
+.boton{
+  max-height: 30px;
+  font-size: 10px;
+}
+}

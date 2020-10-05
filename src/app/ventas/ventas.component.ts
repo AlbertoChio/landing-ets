@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailService } from './email.service';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-ventas',
   templateUrl: './ventas.component.html',
-  styleUrls: ['./seccion-cuatro.component.css',
-              './seccion-tres.component.css',
-              './seccion-dos.component.css',
-              './banner.component.css']
+  styleUrls: ['./ventas.component.css']
 })
 export class VentasComponent implements OnInit {
 
   //banner
   banner: string ="assets/ventas/banner/banner.jpg"
   logo:string="assets/ventas/banner/logo.png"
-  curso:string="VENTAS TELÉFONICAS"
-  tipocurso:string="CURSO Interactivo OnLine"
+  curso:string="CURSO VENTAS TELÉFONICAS"
+  tipocurso:string="Interactivo OnLine"
   margen1:string="assets/ventas/banner/margen1.png"
   descripcion:string='¿Te interesa incrementar tus ventas y acortar el tiempo que te toma cerrar una venta? Aprende a vender tangibles e intangibles como los mejores vendedores.'
   pathbanner:string="assets/ventas/banner/path_banner.png"
@@ -226,42 +225,59 @@ incluyeder(){
       margen5:string="assets/ventas/seccion-tres/margen5.png"
       descuento:string="assets/ventas/seccion-tres/disccountt.png"
       titulosemana:string="Presencial-ENTRE SEMANA"
-      preciosemana:string="$1,999"
-      pregular:string="Ahorras $2,400"
       public precios:any[] =[
         {
           "id": "1",
           "titulo":"ENTRE SEMANA",
-          "precio":"$1,700.00",
-          "ahorras":"Ahorras $1,700.00",
+          "precio":"$2,850.00 +IVA",
+          "ahorras":"Ahorras $2,640.00",
           "horas": "15 horas",
-          "preciolista": "Precio de lista: $3,400.00",
-          "fechas":"Del 18 al 22 de Mayo",
-          "horario":"Horario: 16:00 horas a 19:00 horas",
-          "sesiones": "5 sesiones de 3 horas",
+          "preciolista": "Precio de lista: $4,400.00",
+          "fechas":"26, 27 y 28 de Octubre",
+          "horario":"De 15:00hrs- 20:00hrs",
+          "sesiones": "3 sesiones de 5 horas",
           "lugar":"CDMX"
         },
         {
           "id": "2",
           "titulo":"FINES DE SEMANA",
-          "precio":"$1,900.00",
-          "ahorras":"Ahorras $1,900.00",
+          "precio":"$2,850.00 +IVA",
+          "ahorras":"Ahorras $2,880.00",
           "horas": "15 horas",
-          "preciolista": "Precio de lista: $3,800.00",
-          "fechas":"Del 16 al 23 de Mayo",
-          "horario":"Horario: 08:00 horas a 15:30 horas",
+          "preciolista": "Precio de lista: $4,800.00",
+          "fechas":"14 y 21 de Noviembre",
+          "horario":"De 8:00hrs-15:30hrs",
           "sesiones": "2 Sesiones de 7.5 horas",
           "lugar":"CDMX"
         }
       ]
       //SeccionCuatro
-      titulo: string ="DESCARGA EL TEMARIO"
+      titulo: string ="SOLICITA EL TEMARIO"
       descripcionseccioncuatro: string ="Si te interesa este curso y quieres aprovechar una de nuestras ofertas, comunícate con nosotros y déjanos tu información de contacto para hacerte llegar el temario del curso a tu correo"
+      cliente : any;
+      sending:boolean;
 
 
-  constructor() { }
+
+  constructor(private emailService: EmailService) { }
+
 
   ngOnInit(): void {
+    this.cliente={
+            "nombre":"",
+            "correo":"",
+            "telefono":"",
+            "razon":"",
+            "curso":""
+          }
+  }
+
+  public sendemail(): void{
+    console.log('clicked!');
+    console.log(this.cliente);
+    this.emailService.SendEmail(this.cliente).subscribe(
+      log => console.log(log)
+    );
   }
 
 }

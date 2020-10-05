@@ -5,13 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { IgxCarouselModule } from 'igniteui-angular';
 import { AppComponent } from './app.component';
-import { BannerComponent } from './banner/banner.component';
 import { VentasComponent } from './ventas/ventas.component';
+import { LiderazgoComponent } from './liderazgo/liderazgo.component';
+import { EstresComponent } from './estres/estres.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/ventas', pathMatch: 'full' },
-  { path: 'ventas', component: VentasComponent }
-  //{ path: 'clientes/page/:page', component: ClientesComponent },
+  { path: 'ventas', component: VentasComponent },
+  { path: 'liderazgo', component: LiderazgoComponent },
+  { path: 'inteligencia', component: EstresComponent }
   //{ path: 'clientes/form', component: FormComponent },
   //{ path: 'clientes/form/:id', component: FormComponent }
 ];
@@ -19,8 +20,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent,
-    VentasComponent
+    VentasComponent,
+    LiderazgoComponent,
+    EstresComponent
   ],
   imports: [
     BrowserModule,
